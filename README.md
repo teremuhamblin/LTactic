@@ -1,4 +1,5 @@
-###### README.md >> markdown 
+###### README.md >> markdown
+[![LTactic Package Deployment](https://github.com/teremuhamblin/LTactic/actions/workflows/package.yml/badge.svg)](https://github.com/teremuhamblin/LTactic/actions/workflows/package.yml)
 # 🟩 LTactic
 - ***Système Tactique de Reconnaissance & Cyberdéfense***
 - **Armée de Terre — Légion étrangère**
