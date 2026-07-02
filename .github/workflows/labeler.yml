@@ -1,0 +1,22 @@
+name: LTactic – Auto‑Labeler Militaire
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  apply-labels:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: 🎖️ Application des labels LTactic
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml
+
+      - name: Rapport de mission
+        run: echo "Classification automatique effectuée – LTactic opérationnel."
