@@ -1,0 +1,1 @@
+bash Core/menu.sh
