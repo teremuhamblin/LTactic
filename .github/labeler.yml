@@ -1,0 +1,63 @@
+# ============================
+#  LTactic – LABELER CONFIG
+# ============================
+
+core:
+  - "Core/**"
+  - "main.sh"
+  - "ltactic.sh"
+
+modules-osint:
+  - "Modules/OSINT/**"
+
+modules-blueteam:
+  - "Modules/BlueTeam/**"
+
+modules-mobile:
+  - "Modules/Mobile/**"
+
+plugins:
+  - "Plugins/**"
+
+installer:
+  - "install.sh"
+  - "setup/**"
+
+docs:
+  - "Docs/**"
+  - "**/*.md"
+
+config:
+  - "config/**"
+  - "**/*.conf"
+
+utils:
+  - "Utils/**"
+
+interface:
+  - "Interface/**"
+  - "HUD/**"
+
+actions:
+  - "Actions/**"
+
+security:
+  - "BlueTeam/**"
+  - "OSINT/**"
+  - "Modules/**"
+
+performance:
+  - "Core/**"
+  - "Utils/**"
+
+bug:
+  - "**/*.sh"
+  - "Core/**"
+  - "Modules/**"
+  - "Plugins/**"
+
+workflow:
+  - ".github/workflows/**"
+
+logs:
+  - "Logs/**"
