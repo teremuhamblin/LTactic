@@ -46,7 +46,8 @@ LTactic/
 │   ├── README.md 
 │   └── plugin-manager.sh  
 ├── Docs/
-│   ├── README.md 
+│   ├── README.md
+│   ├── ARCHITECTURE.md
 │   ├── ROADMAP.md        
 │   └── CHANGELOG.md      
 └── main.sh               
