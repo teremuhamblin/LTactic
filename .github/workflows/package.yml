@@ -1,0 +1,34 @@
+name: LTactic Package Deployment
+run-name: Déploiement automatique du package LTactic
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-package:
+    name: Publication du package LTactic
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Récupération du dépôt LTactic
+        uses: actions/checkout@v4
+
+      - name: 🔧 Configuration Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: https://npm.pkg.github.com/
+
+      - name: 🔐 Authentification GitHub Packages
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+
+      - name: 🚀 Publication du package LTactic
+        run: |
+          cd LTactic-package
+          npm publish --access public
+
+      - name: 🟩 Confirmation militaire
+        run: echo "LTactic — Package publié avec succès pour l’Armée de Terre / Légion étrangère."
