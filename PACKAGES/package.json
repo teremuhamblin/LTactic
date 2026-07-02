@@ -1,0 +1,11 @@
+{
+  "name": "@teremu/ltactic",
+  "version": "1.0.0",
+  "description": "Package placeholder pour afficher LTactic dans GitHub Packages",
+  "main": "index.js",
+  "author": "ADC VOISSION Patrice",
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
