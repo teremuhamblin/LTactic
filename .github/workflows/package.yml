@@ -1,4 +1,4 @@
-name: LTactic Package Deployment
+name: PACKAGES
 run-name: Déploiement automatique du package LTactic
 
 on:
@@ -27,7 +27,7 @@ jobs:
 
       - name: 🚀 Publication du package LTactic
         run: |
-          cd LTactic-package
+          cd PACKAGES
           npm publish --access public
 
       - name: 🟩 Confirmation militaire
